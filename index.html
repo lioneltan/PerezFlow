@@ -265,7 +265,7 @@ footer i { color:#00FF99; margin-right:8px; }
 <h2 style="text-align:center;">Ready to Scale Your AI Transformation?</h2>
 <p style="text-align:center; max-width:600px; margin:0 auto 40px; color: var(--color-text-grey);">Tell us your goal: finding the right talent or deploying a custom workflow. We'll respond promptly.</p>
 
-<form id="contactForm" action="https://formsubmit.co/your-email@example.com" method="POST" style="max-width:600px; margin:0 auto; display:grid; gap:20px;">
+<form id="contactForm" action="https://formsubmit.co/jun@perezflow.com" method="POST" style="max-width:600px; margin:0 auto; display:grid; gap:20px;">
     <input type="text" name="name" placeholder="Name" required>
     <input type="email" name="email" placeholder="Email" required>
     <input type="text" name="company" placeholder="Company" required>
@@ -289,10 +289,10 @@ footer i { color:#00FF99; margin-right:8px; }
 
 <script>
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
     alert('Thank you for your inquiry! We will be in touch shortly.');
-    this.reset();
+    // Form will submit normally to FormSubmit
 });
+
 document.getElementById('contactForm').querySelector('select').addEventListener('change', function() {
     this.style.color = 'var(--color-text-white)';
 });
